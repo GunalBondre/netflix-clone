@@ -66,6 +66,11 @@ img {
 	width: 100%;
 }
 
+.border-top-bottom {
+	border-top: 5px solid var(--gray);
+	border-bottom: 5px solid var(--gray);
+}
+
 nav {
 	position: absolute;
 	width: 100%;
@@ -156,4 +161,105 @@ form {
 			padding-left: 10px;
 		}
 	}
+}
+
+.netflix-info {
+	width: 100%;
+	background-color: var(--black);
+}
+
+.netflix-info_inner {
+	display: flex;
+	color: var(--white);
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	gap: 30;
+	padding: 100px 0;
+
+	& h2 {
+		padding-bottom: 20px;
+	}
+}
+
+.netflix-info-reverse {
+	width: 100%;
+	background-color: var(--black);
+	display: flex;
+}
+
+.netflix-info__image,
+.netflix-info__content {
+	display: flex;
+	flex: 1;
+}
+
+.netflix-info__image {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.netflix-info__download-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--gray);
+	padding: 10px;
+	border-radius: 5px;
+	max-width: fit-content;
+	position: relative;
+	background-color: var(--black);
+	bottom: 90px;
+	& img {
+		max-width: 50px;
+	}
+}
+
+.faq-accordion {
+	width: 100%;
+	background-color: var(--black);
+	height: auto;
+	padding: 50px 0;
+}
+
+.accordion-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	color: var(--white);
+}
+
+.accordion-header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	background-color: var(--dark-gray);
+	padding: 20px;
+}
+
+.accordion-item {
+	margin-bottom: 10px;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.icon {
+	font-size: 20px;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.accordion-content {
+	display: none;
+	background-color: var(--dark-gray);
+	color: var(--white);
+	margin-top: 5px;
+	padding: 20px;
 }
