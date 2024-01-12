@@ -33,6 +33,7 @@ button {
 	border-radius: 5px;
 	width: 100px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 select {
@@ -74,7 +75,7 @@ img {
 nav {
 	position: absolute;
 	width: 100%;
-
+	z-index: 99;
 	& .nav__inner {
 		display: flex;
 		justify-content: space-between;
@@ -97,7 +98,6 @@ nav {
 	position: relative;
 	width: 100%;
 	top: 0;
-	z-index: -1;
 }
 
 .hero-section .hero-section__inner {
@@ -107,6 +107,8 @@ nav {
 	align-items: center;
 	color: var(--white);
 	height: 100%;
+	z-index: 10;
+	position: relative;
 }
 
 .hero-section::before {
@@ -116,7 +118,7 @@ nav {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	z-index: -1;
+	z-index: 1;
 	background-color: rgba(0, 0, 0, 0.5);
 	background-image: linear-gradient(
 		to top,
@@ -149,6 +151,8 @@ form {
 		border: 1px solid var(--gray);
 		border-radius: 5px;
 		font-size: 18px;
+		cursor: pointer;
+		color: var(--white);
 	}
 
 	& button {
@@ -251,7 +255,6 @@ form {
 }
 
 h2 {
-	text-align: center;
 	padding-bottom: 20px;
 }
 
